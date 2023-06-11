@@ -5,10 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  selectedFeature: string;
 
-  onFeatureSelected(feature: string) {
-    this.selectedFeature = feature;
-  }
+export class AppComponent {
 }
