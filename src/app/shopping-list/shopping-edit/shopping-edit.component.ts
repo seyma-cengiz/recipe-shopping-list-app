@@ -50,7 +50,6 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   }
 
   onClear() {
-    debugger;
     this.clearForm();
   }
 
