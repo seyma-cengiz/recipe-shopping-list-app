@@ -32,7 +32,7 @@ export class RecipeService {
     }
 
     addRecipe(newRecipe: Recipe){
-        this.recipes.push(newRecipe);d
+        this.recipes.push(newRecipe);
         this.recipesChanged.next(this.getRecipes());
     }
 
