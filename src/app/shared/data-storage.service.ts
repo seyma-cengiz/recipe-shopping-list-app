@@ -10,14 +10,14 @@ export class DataStorageService {
         private recipeService: RecipeService) { }
 
     storeData(recipes: Recipe[]) {
-        this.http.put('api-url', recipes)
+        this.http.put('firebase_api_url.json', recipes)
             .subscribe(response => {
                 console.log(response);
             });
     }
 
     fetchData() {
-        return this.http.get<Recipe[]>('api-url')
+        return this.http.get<Recipe[]>('firebase_api_url.json')
             .pipe(
                 map(recipes => {
                     return recipes.map(recipe => {
