@@ -24,7 +24,7 @@
                     <a routerLinkActive="active" routerLink="/auth">Login / Register</a>
                 </li>
                 <li *ngIf="isAuthenticated">
-                    <a>Logout</a>
+                    <a style="cursor: pointer;" (click)="onLogout()">Logout</a>
                 </li>
             </ul>
         </div>
